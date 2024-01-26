@@ -12,55 +12,57 @@
     <body class="container-lg" data-bs-theme="dark">
         <div class="d-flex justify-content-between">
             <header>
-                <h1>Let's encrypt</h1>
+                <h1>Código Alura</h1>
                 <p>Apenas letras minúsculas e sem acento.</p>
             </header>
-            <aside>
-                <button class="btn btn-primary rounded-circle p-2"><i data-feather="moon"></i></button>
-            </aside>
         </div>
 
-
         <main>
-            <div class="d-flex flex-row-reverse mb-3">
+            <div id="mode-set" class="d-flex align-items-center mb-3">
                 <div class="col">Descriptografar</div>
-                <a class="mx-3">
+                <button id="toggle-mode" class="btn py-1 mx-1 border-0">
                     <i data-feather="repeat"></i>
-                </a>
+                </button>
                 <div class="col">Criptografar</div>
             </div>
 
             <div class="row">
-                <div class="col-6">
-                    <div class="card p-3">
+                <div class="col-sm-12 col-lg-6 mb-3">
+                    <div class="card">
                         <div class="d-flex">
-                            <textarea name="" rows="5" id="text-field" placeholder="Digite seu texto" value=""></textarea>
-                            <a>
-                                <i data-feather="x"></i>
-                            </a>
+                            <textarea name="" rows="7" id="text-field" placeholder="Digite aqui seu texto" class="py-3 ps-3"></textarea>
+                            <span>
+                                <button id="clear" class="btn border-0 p-3">
+                                    <i data-feather="x"></i>
+                                </button>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card p-3">
-                        <div class="d-flex h-100">
-                            <h5 id="result" class="w-100"></h5>
-                            <span><i data-feather="copy"></i></span>
+                <div class="col-sm-12 col-lg-6 mb-3">
+                    <div class="card h-100">
+                        <div class="d-flex">
+                            <h5 id="result" class="w-100 p-3">Após digitado seu texto aparecerá aqui como em um passe de mágica ✨</h5>
+                            <span>
+                                <button id="copy" class="btn border-0 p-3">
+                                    <i data-feather="copy"></i>
+                                </button>
+                            </span>
                         </div>
-                    </div>
-                    <div class="mt-4">
-                        <button class="btn btn-primary">Código Alura</button>
-                        <button class="btn btn-outline-primary">Binário</button>
                     </div>
                 </div>
             </div>
         </main>
 
-        <footer class="d-flex justify-content-center mt-5 gap-4">
-            <i data-feather="github"></i>
-            <i data-feather="plus"></i>
+        <footer class="d-flex justify-content-center gap-4">
+            <a href="https://github.com/cemdq" target="_blank" class="btn border-0">
+                <i data-feather="github"></i>
+            </a>
+            <button id="toggle-theme" class="btn border-0">
+                <i data-feather="sun"></i>
+            </button>
         </footer>
-        <script src="script/main.js"></script>
+        <script type="module" src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script>feather.replace()</script>
     </body>
