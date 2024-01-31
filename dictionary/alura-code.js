@@ -2,9 +2,9 @@ export { encrypt, decrypt }
 
 function encrypt( str ) {
     const substitutionMap = {
-        'a': 'enter',
-        'e': 'imes',
-        'i': 'ai',
+        'a': 'ai',
+        'e': 'enter',
+        'i': 'imes',
         'o': 'ober',
         'u': 'ufat'
     }
@@ -16,9 +16,9 @@ function encrypt( str ) {
 
 function decrypt( str ) {
     const substitutionMap = {
-        'enter': 'a',
-        'imes': 'e',
-        'ai': 'i',
+        'ai': 'a',
+        'enter': 'e',
+        'imes': 'i',
         'ober': 'o',
         'ufat': 'u' 
     }
